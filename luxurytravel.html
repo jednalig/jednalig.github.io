@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"rel="stylesheet"integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Travel Philippines</title>
+    <style>
+      
+.container-fluid {
+  display: grid;
+  grid-template-areas: "nav logo logo" "nav main aside " "nav footer footer";
+  grid-template-columns: 200px 2fr ;
+  gap: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .container-fluid {
+    display: grid;
+    grid-template-areas: " logo"" nav2 " " main " " aside" " footer";
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  #nav2 {
+   
+    grid-area: nav2;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  
+    height: 50px;
+    width: 100%;
+    font-size: 14px;
+    padding: 5px;
+    
+    background-color: white;
+    
+  }
+
+}
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!--------------nav section-------------------->   
+
+
+      <nav id="nav" class="nav" >
+        <p style="position: fixed; margin-left: -100px;"><strong>Menu</strong></p>
+        <div class="nav-info">
+          <div class="nav">
+            <div class="nav-card">         
+              <div class="nav-back">             
+                  <nav class="navside" id="nav"  >               
+                    <br /><br /><br /><br />                 
+                    <a class="nav-item nav-link " href="index.html"><i class="fa fa-home" ></i><strong>Home</strong> </a>
+                    <a class="nav-item nav-link " href="news.html"><i class="fa fa-newspaper"></i><strong>News</strong> </a>
+                    <a class="nav-item nav-link " href="ads.html"><i class="fa fa-tv"></i><strong>Advertise</strong> </a>
+                    <div class="dropdown">
+                      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" style="margin-left: 50px;" data-bs-toggle="dropdown" aria-expanded="false">
+                        <strong>Article</strong> 
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="traveladvice.html">Travel Guide</a></li>
+                        <li><a class="dropdown-item" href="luxurytravel.html">Luxury Travel</a></li>                 
+                      </ul>
+                    </div>                  
+                  </nav>             
+              </div>
+            </div>
+          </div>      
+        </div>
+      </nav>
+
+<!------------------------- this fix nav is for mobile view no  ---------------------->
+
+      <nav2 class="navside" id="nav2"  >
+        <br />   <br /><br /><br /> 
+        <a class="nav-item nav-link " href="index.html"><i class="fa fa-home"></i><strong>Home</strong> </a>
+        <a class="nav-item nav-link " href="news.html"><i class="fa fa-newspaper"></i><strong>News</strong> </a>
+        <a class="nav-item nav-link " href="ads.html"><i class="fa fa-tv"></i><strong>Advertise</strong> </a>
+        <div class="dropdown">
+          <button
+            class="btn dropdown-toggle"type="button"id="dropdownMenuButton1"data-bs-toggle="dropdown"aria-expanded="false"
+          >
+           <strong>Travel Article</strong> 
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="traveladvice.html">Travel Guide</a></li>
+            <li><a class="dropdown-item" href="luxurytravel.html">Luxury Travel</a></li>
+          </ul>
+        </div>    
+      </nav2>
+
+<!-------------- end of nav -------------------->  
+
+<!-------------- logo -------------------->  
+
+    <logo class="navbar imglogo" id="logo">       
+      <img src="gallery/logo.png" alt=""class="logoimg "/>
+    </logo>
+
+<!-------------- logo-------------------->    
+    <main class="main" id="main">
+     
+
+      <div class="div-content">
+        <h1 class="contentlabel"><strong>Philippines Hotels: Luxury</strong></h1>
+        <hr>
+        <content class="divcontent" id="contentdiv">
+        
+            <!-- Portfolio Gallery Grid -->
+            <div class="rowcontent">
+              <div class="columndiv" >
+                <div class="content1">
+                  <img src="gallery/lux1.jpg" alt="Mountains" style="width:100%">
+                  <h3>Amanpulo</h3>
+                  <a href="https://www.fivestaralliance.com/luxury-hotels/manila/amanpulo">visit</a>
+                  <p>Reservations booked under the "5 Star Signature Package" rate will also include continental breakfast for two daily in the Dining Room or through room service and $100 USD hotel credit per room/per stay.</p>
+                </div>
+              </div>
+              <div class="columndiv">
+                <div class="content1">
+                <img src="gallery/lux2.jpg" alt="Lights" style="width:100%">
+                  <h3>The Peninsula Manila</h3>
+                  <a href="https://www.fivestaralliance.com/luxury-hotels/manila/the-peninsula-manila">visit</a>
+                  <p>Reservations booked under the "5 Star Signature Package" rate will also include Afternoon Tea for two in the lobby once per stay, a welcome fruit platter, and daily buffet breakfast for two at Escolta.  </p>
+                </div>
+              </div>
+              <div class="columndiv">
+                <div class="content1">
+                  <img src="gallery/lux3.jpg" alt="Mountains" style="width:100%">
+                  <h3>Raffles Makati</h3>
+                  <a href="https://www.fivestaralliance.com/luxury-hotels/manila/raffles-makati">visit</a>
+                  <p>Raffles Makati is at the heart of a prestigious development – a striking 30-floor masterpiece, home to three sophisticated addresses in one tower: Raffles Makati, with 32 suites; Raffles Residences, with 237 one to four bedroom residences for private ownership </p>
+                </div>
+              </div>
+              <div class="columndiv">
+                <div class="content1">
+                <img src="gallery/lux4.jpg" alt="Lights" style="width:100%">
+                  <h3>Luks Lofts Hotel and Residences</h3>
+                  <a href="https://www.fivestaralliance.com/luxury-hotels/manila/luks-lofts-hotel-and-residences">visit</a>
+                  <p>Tech-focused residence-style 11-room boutique hotel with private pools in every guest room, across the Calumpang River from downtown Batangas. </p>
+                </div>
+              </div>
+            
+            </div>
+            
+           
+        </content>
+      </div>
+        
+    </main>
+    
+
+     <footer id="footer">
+    
+
+              <div class="imgfooter" style="width: 50%;float: left;">
+                <img src="gallery/logo.png" alt=""class="logoimg " height="200" width="90%" />
+              </div>
+          
+              <div class="footer-info" style="width: 50%; float: right;">
+    
+              <h5 class="text-uppercase mb-4 font-weight-bold text-success" >Contact</h5>
+              <p>
+                <i class="fas fa-home mr-3"></i>Current Location: Cebu City
+              </p>
+              <p>
+                <i class="fas fa-envelope mr-3"></i>jednalig@ssct.edu.ph
+              </p>
+              <p>
+                <i class="fas fa-phone mr-3"></i>+09207493641
+              </p>
+              <p>
+                <i class="fas fa-print	 mr-3"></i>N/A
+              </p>
+            </div>
+            
+          </div> 
+        
+      </footer>
+  </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    >
+  </script>
+    
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

@@ -1,0 +1,571 @@
+* {
+	box-sizing: border-box;
+	font-family: "Mukta", sans-serif;
+  }
+  html {
+	scroll-behavior: smooth;
+  }
+  .menu{
+	background-color: #444;
+	width: 30px;
+	height: 5px;
+	gap: 2px;
+  }
+  a > i {
+	padding-right: 20px;
+  }
+  .container-fluid {
+	display: grid;
+	grid-template-areas: "nav logo logo" "nav main aside " "nav footer footer";
+	grid-template-columns: 50px 2fr 300px;
+	gap: 20px;
+  }
+
+  /*================================ logo ===============================*/
+
+  #logo {
+	grid-area: logo;
+	box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+	margin-top: 0%;
+	position: unset;
+	position: static;
+	width: 400px;
+	height: 100px;
+	margin-right: 500px;
+  }
+ 
+ /*================================ end logo ===============================*/
+
+  /*============================== nav section css ===================================*/
+  #nav {
+	position: fixed;
+	grid-area: nav;
+	height: 100%;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	width: 200px;
+  }
+
+	.nav{
+	margin-left: -30px;
+	}
+  .nav .nav-info .nav {
+	left: unset;
+	width: 50px;
+	min-height: 100%;
+	position: fixed;
+	transition: 0.3s ease transform;
+	
+  }
+  .nav .nav-info .nav .nav-card {
+	position: absolute;
+  
+	transform-style: preserve-3d;
+	transition: 0.3s ease transform;
+	display: block;
+  }
+  
+  .nav-back {
+	transform: rotateY(180deg);
+	margin-left: 0px;
+	background-color: #e7e4e4;
+	width: 100%;
+  }
+  
+  .nav .nav-info .nav:hover .nav-card {
+	transform: rotateY(180deg);
+	width: 300px;
+	margin-left: -30px;
+  }
+  .nav .nav-info .nav .nav-card .nav-back .nav-back-desc {
+	margin-top: 10px;
+	text-align: center;
+  }
+  nav a:hover {
+	background-color: #e7e4e4;
+	font-size: 18px;
+  }
+  nav2 {
+	display: none;
+  }
+
+
+/*================================= this is news section style ===============================*/
+  
+ .news .news-info .news {
+	width: 100%;
+	min-height: 300px;
+	position: relative;
+	transition: 0.3s ease transform;
+	margin: 5px;
+  }
+  .news .news-info .news .news-card {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	transform-style: preserve-3d;
+	transition: 0.3s ease transform;
+	display: block;
+  }
+ .news-card .news-front,
+ .news-card .news-back {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	backface-visibility: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(248, 250, 248);
+	padding: 40px;
+  }
+  .news-back {
+	transform: rotateY(180deg);
+  }
+  .news-front i {
+	font-size: 4rem;
+	color: black;
+	margin-bottom: 10px;
+  }
+  
+  .news-front-heading,
+  .news-back-heading {
+	text-transform: capitalize;
+  }
+  .news .news-info .news:hover .news-card {
+	transform: rotateY(180deg);
+  }
+  .news-card .news-back .news-back-desc {
+	margin-top: 10px;
+	text-align: center;
+  }
+  .news:nth-child(1) .news-card .news-front,
+ .news:nth-child(2) .news-card .news-front,
+   .news:nth-child(3) .news-card .news-front  {
+	background-size: cover;
+	position: relative;
+	background-color: aqua;
+	width: 80%;
+	color: white;
+  }
+  
+  .news-card1 {
+	background-image: url(gallery/advertise2.jpeg);
+	width: fit-content;
+	color: white;
+  }
+  .news-card2 {
+	background-image: url(gallery/advertse1.jpeg);
+   
+  }
+  .news-card3 {
+	background-image: url(gallery/advertise3.jpeg);
+   
+	color: white;
+  }
+  .news .news-info .news-card {
+	padding-left: 200px;
+   
+  }
+
+
+
+
+  /*========================= this is for feature in aside section css ==========================*/
+  
+
+
+
+
+
+
+
+
+
+
+  #main {
+	grid-area: main;
+	box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+	padding: 20px;
+  }
+  #aside {
+	grid-area: aside;
+	box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  }
+  #footer {
+	grid-area: footer;
+  }
+  
+  
+  
+ 
+  
+  .navside {
+	margin-top: 0px;
+	box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  }
+  .navside a {
+	text-align: left;
+	width: 100%;
+  
+	padding-left: 25px;
+  }
+  
+  .image {
+	background-color: #aaa;
+	width: 600px;
+	padding: 0px;
+  }
+  
+  .side {
+	display: grid;
+	-ms-flex: 30%;
+	flex: 30%;
+	background-color: #f1f1f1;
+	padding: 20px;
+  }
+  table {
+	background-color: #f1f1f1;
+  }
+  
+  .aside {
+	font-size: 18px;
+  }
+  
+  .maincontent {
+	max-width: 1000px;
+	margin: auto;
+  }
+  
+  .rowcontent {
+	margin: 8px -16px;
+  }
+  
+  .rowcontent,
+  .rowcontent > .columndiv {
+	padding: 8px;
+  }
+  
+  .contentlabel {
+	color: rgb(18, 95, 238);
+  }
+  
+  .columndiv {
+	float: left;
+	width: 25%;
+  }
+  
+  /* Clear floats after rows */
+  .rowcontent:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  .contentlabel {
+	text-align: center;
+  }
+  /* Content */
+  .content1 {
+	background-color: #f1f1f1;
+	padding: 10px;
+  }
+  th a {
+	font-size: 12px;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  
+  .columndiv {
+	width: 50%;
+  }
+  
+  .figcap {
+	width: 100%;
+  }
+  
+  .image-left {
+	display: grid;
+	flex-direction: row-reverse;
+  }
+  
+  footer {
+	display: inline;
+	height: 200px;
+	box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  }
+  .footerimg {
+	padding: 20px;
+  }
+  
+  /*==================================================== IMAGE SWIPE==================================== */
+  
+  [type="radio"] {
+	display: none;
+  }
+  
+  #slider {
+	height: 35vw;
+	position: unset;
+	perspective: 1000px;
+	transform-style: preserve-3d;
+  }
+  
+  #slider label {
+	margin: auto;
+	width: 70%;
+	height: 100%;
+	border-radius: 4px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	cursor: pointer;
+	transition: transform 0.4s ease;
+  }
+  
+  #s1:checked ~ #slide4,
+  #s2:checked ~ #slide5,
+  #s3:checked ~ #slide1,
+  #s4:checked ~ #slide2,
+  #s5:checked ~ #slide3 {
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+	transform: translate3d(-30%, 0, -200px);
+  }
+  
+  #s1:checked ~ #slide5,
+  #s2:checked ~ #slide1,
+  #s3:checked ~ #slide2,
+  #s4:checked ~ #slide3,
+  #s5:checked ~ #slide4 {
+	box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+	transform: translate3d(-15%, 0, -100px);
+  }
+  
+  #s1:checked ~ #slide1,
+  #s2:checked ~ #slide2,
+  #s3:checked ~ #slide3,
+  #s4:checked ~ #slide4,
+  #s5:checked ~ #slide5 {
+	box-shadow: 0 13px 25px 0 rgba(0, 0, 0, 0.3), 0 11px 7px 0 rgba(0, 0, 0, 0.19);
+	transform: translate3d(0, 0, 0);
+  }
+  
+  #s1:checked ~ #slide2,
+  #s2:checked ~ #slide3,
+  #s3:checked ~ #slide4,
+  #s4:checked ~ #slide5,
+  #s5:checked ~ #slide1 {
+	box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+	transform: translate3d(15%, 0, -100px);
+  }
+  
+  #s1:checked ~ #slide3,
+  #s2:checked ~ #slide4,
+  #s3:checked ~ #slide5,
+  #s4:checked ~ #slide1,
+  #s5:checked ~ #slide2 {
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+	transform: translate3d(30%, 0, -200px);
+  }
+  
+  #slider {
+	height: 35vw;
+	position: relative;
+	perspective: 1000px;
+	transform-style: preserve-3d;
+  }
+  .contentswipe {
+	position: absolute;
+	bottom: 0;
+	background: rgb(0, 0, 0); /* Fallback color */
+	background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+	color: #f1f1f1;
+	width: 100%;
+	padding: 20px;
+  }
+  
+  .rate {
+	position: absolute;
+	bottom: 0;
+  
+	background: rgb(0, 0, 0); /* Fallback color */
+	background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+	color: #f1f1f1;
+	width: 100%;
+	padding: 20px;
+  }
+  
+  /* ======================responsiv tablet view=================================== */
+  
+  @media screen and (max-width: 1024px) {
+	.container-fluid {
+	  display: grid;
+	  grid-template-areas: "nav logo " "nav main " "nav aside" "nav footer";
+	  grid-template-columns: 150px 1fr;
+	  gap: 15px;
+	}
+	#nav {
+	  position: fixed;
+	  flex-direction: row;
+	  grid-area: nav;
+	  height: 100%;
+	  width: 150px;
+	}
+	#logo {
+	  grid-area: logo;
+	}
+	#main {
+	  grid-area: main;
+	  font-size: 14px;
+	}
+	#aside {
+	  grid-area: aside;
+	}
+	#footer {
+	  grid-area: footer;
+	}
+  }
+  
+  @media screen and (max-width: 700px) {
+	.container-fluid {
+	  display: grid;
+	  grid-template-areas: " logo"" nav2 " " main " " aside" " footer";
+	  grid-template-columns: 1fr;
+	  gap: 15px;
+	}
+	#nav2 {
+	 
+	  grid-area: nav2;
+	  position: relative;
+	  display: flex;
+	  flex-direction: row;
+	
+	  height: 50px;
+	  width: 100%;
+	  font-size: 14px;
+	  padding: 5px;
+	  
+	  background-color: white;
+	  
+	}
+  
+  
+  
+	.pswipe {
+	  font-size: 10px;
+	}
+	#slider {
+	  height: 50vw;
+	  position: relative;
+	  perspective: 1000px;
+	  transform-style: preserve-3d;
+	}
+	.contentswipe {
+	  position: absolute;
+	  bottom: 0;
+	  background: rgb(0, 0, 0);
+	  background: rgba(0, 0, 0, 0.5);
+	  color: #f1f1f1;
+	  width: 100%;
+	  padding: 10px;
+	}
+
+	 .navside i {display: none;}
+	
+	.circle.circle1 {
+	  width: 200px;
+	  height: 200px;
+	  float: left;
+	  border-radius: 50%;
+	  margin: 10px;
+	  shape-outside: circle();
+	}
+	.circle.circle2 {
+	  width: 150px;
+	  height: 150px;
+	  float: right;
+	  border-radius: 50%;
+	  margin: 10px;
+	  shape-outside: circle();
+	}
+  
+	
+  
+  }
+  
+  .h1 .letters {
+	opacity: 0;
+	text-align: center;
+	letter-spacing: 8px;
+	font-size: 30px;
+	left: 60%;
+	width: 20%;
+  
+	color: #444;
+  }
+  .span {
+	position: absolute;
+  
+	text-align: center;
+  }
+  .h1 .letters-1 {
+	animation: animate1 3s;
+	animation-delay: 1s;
+  }
+  @keyframes animate1 {
+	0% {
+	  opacity: 0.2;
+	  transform: scale(1);
+	}
+  
+	20% {
+	  transform: scale(1.1);
+	  opacity: 0.5;
+	}
+  
+	30% {
+	  transform: scale(1);
+	  opacity: 8;
+	}
+	70% {
+	  transform: scale(1);
+	  opacity: 1;
+	}
+	100% {
+	  transform: scale(2);
+	  opacity: 0;
+	}
+  }
+  
+  /* ======================This css alement is for news======================== */
+  .section {
+	position: relative;
+	width: 100%;
+	padding: 20px;
+  }
+  .circle {
+	position: relative;
+	overflow: hidden;
+  }
+  .circle.circle1 {
+	width: 200px;
+	height: 200px;
+	float: left;
+	border-radius: 50%;
+	margin: 20px;
+	shape-outside: circle();
+  }
+  .circle.circle2 {
+	width: 150px;
+	height: 150px;
+	float: right;
+	border-radius: 50%;
+	margin: 20px;
+	shape-outside: circle();
+  }
+  
+ 
+  
